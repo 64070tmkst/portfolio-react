@@ -58,10 +58,6 @@ table {
   font-family: sans-serif;
 }
 
-div {
-  border: 1px solid;
-}
-
 body {
   margin: 0;
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
@@ -82,6 +78,18 @@ h2 {
   color: #353535;
 }
 
+h3 {
+  font-size: 40px;
+  font-family: "Tw cen MT", "Josefin Sans", "Futura-Medium", sans-serif;
+  color: #353535;
+}
+
+li {
+  font-size: 40px;
+  font-family: "Tw cen MT", "Josefin Sans", "Futura-Medium", sans-serif;
+  color: #353535;
+}
+
 h4 {
   font-size: 24px;
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
@@ -94,12 +102,15 @@ P {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   color: #353535;
   line-height: 1.3;
+  font-weight: medium;
 }
 
 .Hero {
   width: 100%;
-  height: 900px;
+  height: 100vh;
   margin: 0;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,6 +154,23 @@ P {
       grid-template-columns: 1fr 2fr;
 }
 
+.aboutMe .intro img {
+  height: 330px;
+  width: 330px;
+}
+
+.aboutMe .intro .introCaption {
+  margin-left: 44px;
+}
+
+.aboutMe .intro .introCaption h2 {
+  margin-bottom: 20px;
+}
+
+.aboutMe .intro .introCaption h4 {
+  margin-bottom: 20px;
+}
+
 .aboutMe .skills {
   margin-top: 100px;
 }
@@ -157,17 +185,19 @@ P {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 .aboutMe .skills .skillsGrid .skillCard {
   max-width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  margin-bottom: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
 }
 
 .aboutMe .skills .skillsGrid .skillCard .icon {
@@ -178,7 +208,13 @@ P {
   height: 71px;
 }
 
+.aboutMe .skills .skillsGrid .skillCard .icon img {
+  height: 71px;
+  width: 71px;
+}
+
 .aboutMe .skills .skillsGrid .skillCard .skillCaption {
+  margin-left: 20px;
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
@@ -192,5 +228,28 @@ P {
 .aboutMe .skills .skillsGrid .skillCard .skillCaption p {
   font-family: "Tw cen MT", "Josefin Sans", "Futura-Medium", sans-serif;
   font-size: 16px;
+  line-height: 1.2;
+}
+
+.aboutMe .introMore {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+}
+
+.aboutMe .introMore h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.aboutMe .introMore h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.aboutMe .introMore p {
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=style.css.map */
